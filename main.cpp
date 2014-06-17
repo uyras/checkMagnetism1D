@@ -32,9 +32,9 @@ int main()
 
         sys->setToGroundState();
         if (!(oldState==sys->state))
-            cout<<"found!"<<endl;
+            cout<<"found anomaly!"<<endl;
 
-        //замеряем уровень намагниченности
+        //замеряем уровень намагниченности, при аномалиях должен быть не 0 (для четногочисла частиц) и не 1 (для нечетного числа частиц)
         cout<<sys->M().length()<<endl;
     }
 
